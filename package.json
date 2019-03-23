@@ -1,19 +1,24 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "GraceJane",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Oliver Parkinson<olliepar01@gmail.com>",
   "dependencies": {
+    "core-js": "^3.0.0",
     "gatsby": "^2.2.8",
     "gatsby-cli": "^2.4.17",
-    "gatsby-image": "^2.0.33",
+    "gatsby-image": "^2.0.34",
+    "gatsby-plugin-catch-links": "^2.0.13",
     "gatsby-plugin-manifest": "^2.0.24",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.10",
     "gatsby-plugin-sharp": "^2.0.30",
+    "gatsby-remark-images": "^3.0.10",
     "gatsby-source-filesystem": "^2.0.24",
+    "gatsby-transformer-remark": "^2.3.8",
     "gatsby-transformer-sharp": "^2.1.17",
+    "gh-pages": "^2.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -32,11 +37,12 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/OJPARKINSON/gracejane"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

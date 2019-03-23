@@ -13,9 +13,9 @@ const Layout = ({ children }) => (
       <>
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built with
+            © {new Date().getFullYear()}, Built by
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <a target="_blank" rel="noopener noreferrer" href="http://oliverparkinson.co.uk">Oliver Parkinson</a>
           </footer>
       </>
     )

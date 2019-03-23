@@ -1,10 +1,19 @@
 import PropTypes from "prop-types"
 import React from "react"
+import '../components/layout'
 
 
 const Header = () => (
   <header>
-    <h1>Grace Jane</h1>
+    <div className="headerContainer">
+      <h1>Grace Jane Music</h1>
+      <h2 id="setter"><a href="#g">Gigs</a></h2>
+      <h2><a href="#s">Social</a></h2>
+      <h2><a href="#a">About</a></h2>
+      <h2><a href="#m">Music</a></h2>
+    </div>
+    
+   
   </header>
 )
 

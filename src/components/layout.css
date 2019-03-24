@@ -22,15 +22,17 @@ header {
 }
 h1 {
     font-weight: 200;
-    font-size: 3.5vw;
+    font-size: 3vw;
+    margin-top: 1vh;
     display: inline;
 } 
 .headerContainer h2 {
     text-transform: uppercase;
-    margin-top: 2.5vh;
+    margin-top: 3.5vh;
     font-family: 'Work Sans', sans-serif;
     text-decoration: underline;
-    font-size: 1.9vw;
+    font-size: 1.5vw;
+    letter-spacing: .4vw;
     font-weight: 100;
 }
 #setter {
@@ -44,6 +46,7 @@ a {
     font-family: inherit;
 }
 .subTitle {
+    display: block;
     text-align: center;
     font-size: 3vw;
     margin: 4vh 0;
@@ -57,19 +60,23 @@ a {
     font-family: 'Sacramento', cursive !important;
     font-size: 10vw;
     font-weight: 100;
+    text-decoration: underline;
     justify-self: center;
     align-self: center;
 }
 .latestWork a {
     margin: 0 auto;
     width: 75%;
-    height: 85%;
+    height: 90%;
+    justify-self: center;
+    align-self: center;
 }
 .oceanImg {
-    position: none !important;
     width: 80%;
     height: 100%;
     margin: 0 auto;
+    justify-self: center;
+    align-self: center;
 }
 img {
     object-fit: inherit !important;
@@ -84,10 +91,47 @@ img {
     text-decoration: underline;
     font-size: 1.5vw;
 }
+.buttonContainer{
+    text-align:center;
+    background-size:cover;
+    overflow:hidden
+}
+.fancy-btn{
+    display:inline-block;
+    position:relative;
+    padding:10px 20px;
+    border:2px solid black;
+    color:black;
+    font-family:'Dancing Script',serif;
+    font-style:italic;
+    font-size:30px;
+    text-decoration:none;
+    margin:20px auto;
+    transition: color 0.4s
+}
+.fancy-btn:after{
+    content:" ";
+    border:2px solid rgba(0,0,0,0);
+    display:inline-block;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    transition:all 0.4s;
+}
+.fancy-btn:hover:after{  
+    border:2px solid black;
+    width: calc(100% - 10px);
+    height: calc(100% + 10px); 
+}
 .upcomingGigs {
-    width: 65vw;
+    width: 50vw;
     display: grid;
-    grid-template-columns: 20vw 15vw 15vw 15vw;
+    grid-template-columns: 8vw 10vw 20vw 15vw;
     margin: 0 auto;
     border: 1px solid black;
     text-justify: center;
@@ -95,14 +139,37 @@ img {
 }
 h3, span {
     margin: 1vw;
+    align-self: center;
+    justify-self: center;
 }
 span a {
     border: 1px solid black;
     text-decoration: none;
     font-size:1.5vw;
+    padding: .5vw;
+    font-style:italic;
+    font-family:'Dancing Script',serif;
 }
 #gig {
-    grid-column-start: 3;
+    grid-column-start: 4;
+}
+
+
+@media only screen and (max-width: 1080px) { 
+    .upcomingGigs {
+        width: 85vw;
+        grid-template-columns: 20vw 20vw 25vw 20vw;
+    }
+    h3 {
+        font-size: 2vw;
+        margin: 0;
+    }
+    span a {
+        border: 1px solid black;
+        text-decoration: none;
+        font-size:2.5vw;
+        padding: .5vw;
+    }
 }
 @media only screen and (max-width: 640px) {
     h1 {
@@ -118,5 +185,11 @@ span a {
     }
     #setter {
         grid-column-start: 3;
+    }
+    h3 {
+        font-size: 2vw;
+    }
+    .frameContainer {
+        display: none;
     }
 }

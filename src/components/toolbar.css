@@ -1,0 +1,38 @@
+.navContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: block;
+    color: white !important;
+    text-align: center;
+}
+.navLinks ul {
+    margin-top: 30vh;
+}
+.closeBtn {
+    position: fixed;
+    top: 2vw;
+    right:5vw;
+    font-size: 3vw;
+    padding: 2vw;
+}
+li {
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: underline;
+    font-size: 3vw;
+    letter-spacing: .4vw;
+    width: 100%;
+    margin: 3vw 0;
+    font-weight: 100;
+    text-align: center;
+}
+a {
+    
+    color: inherit;
+    font-family: inherit;
+}

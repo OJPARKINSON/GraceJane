@@ -3,17 +3,14 @@ import React from "react"
 import '../components/layout'
 
 
-const Header = () => (
+const Header = props => (
   <header>
-    <div className="headerContainer">
+    <div className="headerTitle">
       <h1>Grace Jane Music</h1>
-      <h2 id="setter"><a href="#gigs">Gigs</a></h2>
-      <h2><a href="#a"> Social</a></h2>
-      <h2><a href="#a"> About</a></h2>
-      <h2><a href="#m">Music</a></h2>
     </div>
-    
-   
+    <div className="menu">
+      <button onClick={props.drawerClickHandler}>hello</button>
+    </div>
   </header>
 )
 

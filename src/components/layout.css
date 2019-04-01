@@ -14,42 +14,31 @@ header {
     background-size: cover;
     background-position: 50%;
 }
-.headerContainer {
-    padding: 1vw 0 0 7vw ;
-    display: grid;
-    grid-template-columns: 30vw repeat(7, 1fr);
-    grid-gap: 2vw;
+.headerTitle {
+    max-width: 100%;
+    height: 100vh;
+    columns: 1;
+}
+.menu button {
+    position: absolute;
+    top: 4.5vw;
+    right: 9vw;
+    font-size: 2vw;
 }
 h1 {
+    margin-left: 7vw;
+    padding-top: 3vw;
     font-weight: 200;
-    font-size: 3vw;
-    margin-top: 1vh;
-    display: inline;
+    font-size: 3.5vw;
 } 
-.headerContainer h2 {
-    text-transform: uppercase;
-    margin-top: 3.5vh;
-    font-family: 'Work Sans', sans-serif;
-    text-decoration: underline;
-    font-size: 1.5vw;
-    letter-spacing: .4vw;
-    font-weight: 100;
-}
-#setter {
+#gig {
     grid-column-start: 4;
-}
-.navContainer h2:hover {
-    color: lightgray;
-}
-a {
-    color: inherit;
-    font-family: inherit;
 }
 .subTitle {
     display: block;
     text-align: center;
     font-size: 3vw;
-    margin: 4vh 0;
+    margin: 4vw 0;
 }
 .latestWork {
     width: 100%;
@@ -80,16 +69,6 @@ a {
 }
 img {
     object-fit: inherit !important;
-}
-.gigSetup {
-    width: 65vw;
-    display: grid;
-    grid-template-columns: 20vw 15vw 15vw 15vw;
-    margin: 0 auto;
-    text-justify: center;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 1.5vw;
 }
 .buttonContainer{
     text-align:center;
@@ -128,38 +107,54 @@ img {
     width: calc(100% - 10px);
     height: calc(100% + 10px); 
 }
-.upcomingGigs {
-    width: 50vw;
+.gigSetup {
+    width: 80%;
     display: grid;
-    grid-template-columns: 8vw 10vw 20vw 15vw;
+    grid-template-columns: 35vw 45vw;
+    grid-gap: 3vw;
     margin: 0 auto;
-    border: 1px solid black;
-    text-justify: center;
-    text-align: center;
 }
-h3, span {
-    margin: 1vw;
-    align-self: center;
-    justify-self: center;
+.gigImg {
+    margin-top: 3vw;
+    width: 100%;
+    float: right;
+    height: auto;
+    border-radius: 10%;
 }
-span a {
-    border: 1px solid black;
+.gigsContainer {
+    width: 100%;
+}
+.gig {
+    width: 100%;
+    margin-top: 1vw;
+    border-bottom: .2vw solid black;
+    height: 5vw;
+}
+.gigsContainer h3 {
+    font-size: 2.5vw;
+    display: inline;
+    text-decoration: underline;
+}
+.gig h3 {
     text-decoration: none;
-    font-size:1.5vw;
+    font-size: 2vw;
+    float: left;
+    margin: .3vw;
+}
+.gigDate h3 {
+    padding-top: .3vw;
+    font-size: .8vw;
+    margin: .3vw;
+}
+#gig a {
+    float: right;
+    margin: 0.6vw .1vw .1vw .1vw;
     padding: .5vw;
-    font-style:italic;
-    font-family:'Dancing Script',serif;
+    font-size: 1.2vw;
+    border: .1vw solid black;
+    text-decoration: none;
 }
-#gig {
-    grid-column-start: 4;
-}
-
-
 @media only screen and (max-width: 1080px) { 
-    .upcomingGigs {
-        width: 85vw;
-        grid-template-columns: 20vw 20vw 25vw 20vw;
-    }
     h3 {
         font-size: 2vw;
         margin: 0;
@@ -170,26 +165,41 @@ span a {
         font-size:2.5vw;
         padding: .5vw;
     }
-}
-@media only screen and (max-width: 640px) {
-    h1 {
-        font-size: 4.5vw;
+    .frameContainer {
+        display: none;
     }
-    .headerContainer {
-        grid-template-columns: 26vw repeat(5, 1fr);
-        grid-gap: 3vw;
-        padding: 1vw 8vw 0 8vw ;
+    .headerTitle {
+        padding: 0;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
     }
-    .headerContainer h2 {
-        font-size: 3.5vw;
+    .headerTitle h2 {
+        font-size: 6vw;
+        text-align: center;
+        text-justify: center;
+        margin-top: 0;
     }
-    #setter {
-        grid-column-start: 3;
+    .headerTitle h1 {
+        font-size: 10vw;
+        margin-top: 1.4vw;
+        margin: 0 auto;
+    }
+    .subTitle {
+        font-size: 5vw;
     }
     h3 {
-        font-size: 2vw;
+        font-size: 3vw;
     }
-    .frameContainer {
+    #social {
+        display: none;
+    }
+    .gigSetup {
+        display: block;
+        font-size: 2vw; 
+    }
+    .gigImg {
         display: none;
     }
 }

@@ -7,19 +7,19 @@ import Toolbar from "../components/toolbar";
 
 class IndexPage extends Component {
   state = {
-    navOpen: false
+   navOpen: false
   };
 
   drawerToggleClickHandler = () => {
-    this.setState((prevState) =>{
+    this.setState((prevState) => {
       return {navOpen: !prevState.navOpen};
     });
   };
 
   render() {
     let nav;
-    if (this.setState.navOpen) {
-      nav = <Toolbar />
+    if (this.state.navOpen) {
+      nav = <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />;
     }
     return (
       <Layout className="layout">
@@ -45,7 +45,7 @@ class IndexPage extends Component {
         {/* Use an svg/gif/png wave or ocean and make it into a favicon as well */}
           <img alt="Neon sign saying, no music no life" className="gigImg" src={require('../images/simon-noh-304784-unsplash.jpg')}></img>
           <div className="gigsContainer">
-          <h3>Live Shows</h3>
+          <h3 id="gigs">Live Shows</h3>
           <Gig dateNum="03" weekDay="MON" month="JAN" location="Crash Records - Leeds, UK" />
           <Gig dateNum="12" weekDay="THUR" month="APR" location="Church - Leeds, UK" />
           <Gig dateNum="10" weekDay="SAT" month="MAY" location="O2 Academy - Leeds, UK" />

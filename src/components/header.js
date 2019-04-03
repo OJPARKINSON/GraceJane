@@ -8,8 +8,10 @@ const Header = props => (
     <div className="headerTitle">
       <h1>Grace Jane Music</h1>
     </div>
-    <div className="menu">
-      <button onClick={props.drawerClickHandler}>hello</button>
+    <div className="content">
+      <div onClick={props.drawerClickHandler} id="burger">
+        <i></i>
+      </div>
     </div>
   </header>
 )
@@ -22,4 +24,4 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Header;

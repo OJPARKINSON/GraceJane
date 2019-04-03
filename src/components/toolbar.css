@@ -1,23 +1,25 @@
 .navContainer {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: black;
-    display: block;
     color: white !important;
     text-align: center;
+    transition: 0.7s;
 }
 .navLinks ul {
     margin-top: 30vh;
+    
 }
 .closeBtn {
     position: fixed;
-    top: 2vw;
-    right:5vw;
-    font-size: 3vw;
+    top: 0.8vw;
+    right: 8.5vw;
     padding: 2vw;
+    font-size: 4vw;
+    font-weight: 100;
 }
 li {
     list-style: none;

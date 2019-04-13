@@ -118,7 +118,8 @@ img {
 .buttonContainer{
     text-align:center;
     background-size:cover;
-    overflow:hidden
+    overflow:hidden;
+    padding-bottom: 2vw;
 }
 .fancy-btn{
     display:inline-block;
@@ -152,6 +153,15 @@ img {
     width: calc(100% - 10px);
     height: calc(100% + 10px); 
 }
+.parallaxSpacer {
+    width: 100%;
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/Grace_Jane6.jpg')
+}
 .gigSetup {
     width: 80%;
     display: grid;
@@ -168,8 +178,10 @@ img {
 }
 .gigsContainer {
     width: 100%;
+    padding-bottom: 20vh;
 }
 .gig {
+    font-size: 4vw;
     width: 100%;
     margin-top: 1vw;
     border-bottom: .2vw solid black;
@@ -182,7 +194,6 @@ img {
 }
 .gig h3 {
     text-decoration: none;
-    font-size: 2vw;
     float: left;
     margin: .3vw;
 }
@@ -200,9 +211,12 @@ img {
     text-decoration: none;
 }
 @media only screen and (max-width: 1080px) { 
-    h3 {
-        font-size: 2vw;
+    .latestWork h3 {
+        font-size: 13vw;
         margin: 0;
+    }
+    .oceanImg {
+        width: 95%;
     }
     span a {
         border: 1px solid black;
@@ -233,19 +247,40 @@ img {
     .subTitle {
         font-size: 5vw;
     }
-    h3 {
-        font-size: 3vw;
-    }
     .gigSetup {
         display: block;
         font-size: 2vw; 
+        width: 85%; 
     }
     .gigImg {
         display: none;
     }
+    .gigsContainer h3 {
+        font-size: 4vw;
+    }
+    .gigDate h3 {
+        font-size: 1.5vw;
+    }
     .fancy-btn {
         padding: 3vw 6vw;
-        font-size: 6vw;
+        font-size: 4.5vw;
         margin: 6vw auto;
+    } 
+    .content { 
+        top: 10vw;
+        right: 7vw;
+    }
+    #burger {
+        width: 10vw;
+        height: 8vw;
+    } 
+    #burger:before {
+        height: 1.2vw;
+    }
+    #burger i {
+        height: 1.5vw;
+    }
+    #burger:after {
+        height: 1.2vw;
     }
 }

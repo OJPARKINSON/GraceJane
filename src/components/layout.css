@@ -83,7 +83,7 @@ h1 {
     display: block;
     text-align: center;
     font-size: 3vw;
-    margin: 4vw 0;
+    margin: 3vw 0;
 }
 .latestWork {
     width: 100%;
@@ -105,16 +105,14 @@ h1 {
     justify-self: center;
     align-self: center;
 }
-.oceanImg {
+.oceanImg  {
     width: 80%;
     height: 100%;
     margin: 0 auto;
     justify-self: center;
     align-self: center;
 }
-img {
-    object-fit: inherit !important;
-}
+
 .buttonContainer{
     text-align:center;
     background-size:cover;
@@ -164,8 +162,6 @@ img {
 }
 .gigSetup {
     width: 80%;
-    display: grid;
-    grid-template-columns: 35vw 45vw;
     grid-gap: 3vw;
     margin: 0 auto;
 }
@@ -195,10 +191,9 @@ img {
 .gig h3 {
     text-decoration: none;
     float: left;
-    margin: .3vw;
 }
 .gigDate h3 {
-    padding-top: .3vw;
+    padding-top: .5vw;
     font-size: .8vw;
     margin: .3vw;
 }
@@ -209,8 +204,9 @@ img {
     font-size: 1.2vw;
     border: .1vw solid black;
     text-decoration: none;
+    font-family: "Dancing Script", serif;
 }
-@media only screen and (max-width: 1080px) { 
+@media only screen and (max-width: 1024px) { 
     .latestWork h3 {
         font-size: 13vw;
         margin: 0;
@@ -239,6 +235,7 @@ img {
         margin-top: 0;
     }
     .headerTitle h1 {
+        margin-top: 3vw;
         font-size: 10vw;
         padding: 0;
         float: left;
@@ -267,18 +264,18 @@ img {
         margin: 6vw auto;
     } 
     .content { 
-        top: 10vw;
-        right: 7vw;
+        top: 12vw;
+        right: 5vw;
     }
     #burger {
         width: 10vw;
         height: 8vw;
     } 
     #burger:before {
-        height: 1.2vw;
+        height: 1.1vw;
     }
     #burger i {
-        height: 1.5vw;
+        height: 1.1vw;
     }
     #burger:after {
         height: 1.2vw;

@@ -24,7 +24,7 @@ class IndexPage extends Component {
         <SEO title="Home" keywords={[`Grace Jane`, `Singer`, `Song Writter`]} />
         <Header drawerClickHandler={this.drawerToggleClickHandler} />
         {nav}
-        <h2 className="subTitle">Latest Release</h2>
+        <h2 id="music" className="subTitle">Latest Release</h2>
         <div className="latestWork">
           <h3>
             <a target="_blank" rel="noopener noreferrer" href="https://ampl.ink/gy1X8">
@@ -39,10 +39,10 @@ class IndexPage extends Component {
           <a target="_blank" rel="noopener noreferrer" href="https://ampl.ink/gy1X8" className="fancy-btn">Listen here</a> <br/>
         </div>
         <div className="parallaxSpacer"></div>
-        <h2 className="subTitle">Upcoming Gigs</h2>
+        <h2 id="gigs" className="subTitle">Upcoming Gigs</h2>
         <div className="gigSetup">
           <div className="gigsContainer">
-          <Gig dateNum="03" weekDay="MON" month="JAN" location="Crash Records - Leeds, UK" />
+          <Gig dateNum="03" weekDay="MON" month="JAN" location="Boileroom - Guildford, UK" />
           <Gig dateNum="12" weekDay="THUR" month="APR" location="Church - Leeds, UK" />
           <Gig dateNum="10" weekDay="SAT" month="MAY" location="O2 Academy - Leeds, UK" />
         </div>

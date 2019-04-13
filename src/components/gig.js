@@ -8,7 +8,7 @@ const Gig =  props => (
     <h3>{props.weekDay}<br/>{props.month}</h3>
     </div>
     <h3>{props.location}</h3>
-    <span id="gig"><a href="https://www.songkick.com/concerts/35183634-grace-jane-at-boileroom">Tickets</a></span>
+    <span className="gig"><a href="https://www.songkick.com/concerts/35183634-grace-jane-at-boileroom">Tickets</a></span>
 </div>
 )
 

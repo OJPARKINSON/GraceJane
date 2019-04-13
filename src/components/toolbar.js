@@ -9,7 +9,7 @@ const Toolbar = props => (
                 <li><a onClick={props.drawerClickHandler} href="#gigs">Gigs</a></li>
                 <li onClick={props.drawerClickHandler} id="social"><a href="#a"> Social</a></li>
                 <li><a onClick={props.drawerClickHandler} href="#a"> About</a></li>
-                <li><a onClick={props.drawerClickHandler} href="#m">Music</a></li>
+                <li><a onClick={props.drawerClickHandler} href="#music">Music</a></li>
             </ul>
         </nav>
     </div>

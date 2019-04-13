@@ -76,9 +76,6 @@ h1 {
     font-weight: 200;
     font-size: 3.5vw;
 } 
-#gig {
-    grid-column-start: 4;
-}
 .subTitle {
     display: block;
     text-align: center;
@@ -179,7 +176,7 @@ h1 {
 .gig {
     font-size: 4vw;
     width: 100%;
-    margin-top: 1vw;
+    padding-top: 1vw;
     border-bottom: .2vw solid black;
     height: 5vw;
 }
@@ -197,11 +194,11 @@ h1 {
     font-size: .8vw;
     margin: .3vw;
 }
-#gig a {
+.gig a {
     float: right;
     margin: 0.6vw .1vw .1vw .1vw;
     padding: .5vw;
-    font-size: 1.2vw;
+    font-size: 1.8vw;
     border: .1vw solid black;
     text-decoration: none;
     font-family: "Dancing Script", serif;
@@ -219,6 +216,14 @@ h1 {
         text-decoration: none;
         font-size:2.5vw;
         padding: .5vw;
+    }
+    .gig {
+        padding-top: 3vw;
+        padding-bottom: 1vw;
+    }
+    .gig a {
+        font-size: 3vw;
+        margin: 0.6vw .1vw .8vw .1vw;
     }
     .frameContainer {
         display: none;

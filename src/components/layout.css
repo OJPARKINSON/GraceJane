@@ -5,7 +5,6 @@
   padding: 0;
   font-weight: 100;
   font-family: Futura,Trebuchet MS,Arial,sans-serif; 
-  
 }
 header { 
     display: block;
@@ -148,11 +147,9 @@ h1 {
     width: calc(100% - 10px);
     height: calc(100% + 10px); 
 }
-.parallaxSpacer {
-    width: 25vw;
+.imgSpacer {
+    width: 75vw;
     margin: 0 auto;
-    height: 25vh;
-    background-image: url('../images/Grace_Jane6.jpg')
 }
 .gigSetup {
     width: 80%;

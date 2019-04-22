@@ -38,7 +38,6 @@ class IndexPage extends Component {
         <div className="buttonContainer">
           <a target="_blank" rel="noopener noreferrer" href="https://ampl.ink/gy1X8" className="fancy-btn">Listen here</a> <br/>
         </div>
-        <div className="parallaxSpacer"></div>
         <h2 id="gigs" className="subTitle">Upcoming Gigs</h2>
         <div className="gigSetup">
           <div className="gigsContainer">

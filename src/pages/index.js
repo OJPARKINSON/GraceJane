@@ -38,13 +38,16 @@ class IndexPage extends Component {
         <div className="buttonContainer">
           <a target="_blank" rel="noopener noreferrer" href="https://ampl.ink/gy1X8" className="fancy-btn">Listen here</a> <br/>
         </div>
+        <p id="quote">“Grace Jane's beautiful and accomplished songwriting breathes clarity, with rich vocals and a peaceful, reflective mood.” - Boileroom </p>
+        <div className="waves"></div>
         <h2 id="gigs" className="subTitle">Upcoming Gigs</h2>
         <div className="gigSetup">
           <div className="gigsContainer">
-          <Gig dateNum="03" weekDay="MON" month="JAN" location="Boileroom - Guildford, UK" />
-          <Gig dateNum="12" weekDay="THUR" month="APR" location="Church - Leeds, UK" />
-          <Gig dateNum="10" weekDay="SAT" month="MAY" location="O2 Academy - Leeds, UK" />
-        </div>
+            <Gig dateNum="03" weekDay="MON" month="JAN" location="Boileroom - Guildford, UK" />
+            <Gig dateNum="12" weekDay="THUR" month="APR" location="Church - Leeds, UK" />
+            <Gig dateNum="10" weekDay="SAT" month="MAY" location="O2 Academy - Leeds, UK" />
+            <h2>Keep a look out on my socials for updates</h2>
+          </div>
         </div>
       </Layout>
     )
